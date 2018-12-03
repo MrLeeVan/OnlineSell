@@ -1,6 +1,5 @@
 <application>
   <component name="GitoscSettings">
-    <option name="LOGIN" value="leevan" />
-    <option name="AUTH_TYPE" value="SESSION" />
+    <option name="AUTH_TYPE" value="TOKEN" />
   </component>
 </application>
