@@ -1,10 +1,12 @@
 package com.leevan.sell.dataobject;
 
 import lombok.Data;
+import org.hibernate.annotations.DynamicUpdate;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import java.util.Date;
 
 /**
  * @Author Leevan
@@ -14,6 +16,7 @@ import javax.persistence.Id;
  */
 @Entity
 @Data
+@DynamicUpdate
 public class ProductCategory {
     /*类目ID*/
     @Id
@@ -24,12 +27,17 @@ public class ProductCategory {
     /*类目编号*/
     private Integer categoryType;
 
-    @Override
-    public String toString() {
-        return "ProductCategory{" +
-                "categoryId=" + categoryId +
-                ", categoryName='" + categoryName + '\'' +
-                ", categoryType=" + categoryType +
-                '}';
+    public ProductCategory(String categoryName, int categoryType) {
+        this.categoryName = categoryName;
+        this.categoryType = categoryType;
     }
+
+    /* *//*创建时间*//*
+    private Date createTime;
+    *//*更新时间*//*
+    private Date updateTime;*/
+public void ProductCategory(){
+
+}
+
 }
