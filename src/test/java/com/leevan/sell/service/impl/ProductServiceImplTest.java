@@ -46,9 +46,9 @@ public class ProductServiceImplTest {
 
     @Test
     public void save() {
-        ProductInfo productInfo = new ProductInfo("1001",
-                "西瓜", new BigDecimal( 11 ),150,
-                "清凉可口，冰镇西瓜！", "http:xxxx.jpg",
+        ProductInfo productInfo = new ProductInfo("3001",
+                "臭豆腐", new BigDecimal( 11 ),150,
+                "闻起来臭，吃起来臭！", "http:xxxx.jpg",
                 0, 4);
         ProductInfo result = productService.save( productInfo );
          Assert.assertNotNull( result );
