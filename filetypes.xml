@@ -1,8 +1,0 @@
-<application>
-  <component name="FileTypeManager" version="17">
-    <extensionMap>
-      <mapping ext="obj" type="PLAIN_TEXT" />
-      <mapping pattern="logback-spring" type="XML" />
-    </extensionMap>
-  </component>
-</application>

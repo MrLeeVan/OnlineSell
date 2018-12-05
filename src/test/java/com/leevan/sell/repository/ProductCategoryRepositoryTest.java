@@ -33,21 +33,21 @@ public class ProductCategoryRepositoryTest {
 @Test
 @Transactional   /*设置回滚，测试通过后删除数据库中留下的记录！*/
     public void saveTest(){
-    ProductCategory productCategory = new ProductCategory("热销榜",9);
+    ProductCategory productCategory = new ProductCategory("热销榜",1);
     ProductCategory result = repository.save( productCategory );
     Assert.assertNotNull( result );
 }
 @Test
     public void updateTest(){
-    ProductCategory productCategory = repository.findOne( 8 );
-    productCategory.setCategoryName( "Mr_Van 最爱de" );
-    productCategory.setCategoryType( 4 );
+    ProductCategory productCategory = repository.findOne( 2 );
+    productCategory.setCategoryName( "热销榜" );
+    productCategory.setCategoryType( 2 );
     repository.save(productCategory);
 
 }
 @Test
     public void findByCategoryTypeInTest(){
-    List<Integer> list = Arrays.asList(5,4,9);
+    List<Integer> list = Arrays.asList(2,1);
     List<ProductCategory> result = repository.findByCategoryTypeIn( list );
     Assert.assertNotEquals( 0,result.size() );
 
