@@ -27,7 +27,7 @@ private ProductInfoRepository repository;
         ProductInfo productInfo = new ProductInfo("1001",
                 "西瓜", new BigDecimal( 11 ),150,
                 "清凉可口，冰镇西瓜！", "http:xxxx.jpg",
-                0, 4);
+                0, 2);
 
         ProductInfo result = repository.save( productInfo );
         Assert.assertNotNull(result);

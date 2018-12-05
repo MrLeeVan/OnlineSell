@@ -31,8 +31,8 @@ public class ProductServiceImplTest {
     }
 
     @Test
-    public void findAll() {
-        List<ProductInfo> productInfoList = productService.findAll();
+    public void findUpAll() {
+        List<ProductInfo> productInfoList = productService.findUpAll();
         Assert.assertNotEquals( 0,productInfoList.size() );
     }
 
@@ -46,11 +46,11 @@ public class ProductServiceImplTest {
 
     @Test
     public void save() {
-        ProductInfo productInfo = new ProductInfo("3001",
-                "臭豆腐", new BigDecimal( 11 ),150,
-                "闻起来臭，吃起来臭！", "http:xxxx.jpg",
-                0, 4);
+        ProductInfo productInfo = new ProductInfo("2001",
+                "苹果", new BigDecimal( 6 ),150,
+                "香甜可口，嘎嘣脆！", "http:xxxx.jpg",
+                0, 2);
         ProductInfo result = productService.save( productInfo );
-         Assert.assertNotNull( result );
+        Assert.assertNotNull( result );
     }
 }
