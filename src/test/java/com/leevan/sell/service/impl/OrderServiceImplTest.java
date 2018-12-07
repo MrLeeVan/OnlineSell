@@ -21,7 +21,7 @@ import static org.junit.Assert.*;
 @SpringBootTest
 @RunWith(SpringRunner.class)
 @Slf4j
-public class OrderServiceImplTest {
+public class  OrderServiceImplTest {
     @Autowired
     private OrderServiceImpl orderService;
 
