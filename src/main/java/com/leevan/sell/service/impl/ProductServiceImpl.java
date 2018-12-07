@@ -1,13 +1,19 @@
 package com.leevan.sell.service.impl;
 
 import com.leevan.sell.dataobject.ProductInfo;
+import com.leevan.sell.dto.CartDTO;
 import com.leevan.sell.enums.ProductStatusEnum;
+import com.leevan.sell.enums.ResultEnum;
+import com.leevan.sell.exception.SellException;
 import com.leevan.sell.repository.ProductInfoRepository;
 import com.leevan.sell.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+
 import java.util.List;
 
 /**
@@ -15,6 +21,7 @@ import java.util.List;
  * @Date： 2018/12/4 18:47
  */
 @Service
+
 public class ProductServiceImpl implements ProductService {
     @Autowired
     private ProductInfoRepository repository;
@@ -36,5 +43,27 @@ public class ProductServiceImpl implements ProductService {
     @Override
     public ProductInfo save(ProductInfo productInfo) {
         return repository.save( productInfo );
+    }
+
+    @Override
+    public void increaseStock(List<CartDTO> cartDTOList) {
+
+    }
+
+    @Override
+    @Transactional  //设置事务。若不成功，进行回滚！
+    public void decreaseStock(List<CartDTO> cartDTOList) {
+      for (CartDTO cartDTO: cartDTOList){
+          ProductInfo productInfo = repository.findOne(cartDTO.getProductId());
+          if(productInfo == null ){
+              throw new SellException(ResultEnum.PRODUCT_NOT_EXIST);
+          }
+          Integer result = productInfo.getProductStock() - cartDTO.getProductQuantity();
+          if (result < 0 ){
+              throw new SellException(ResultEnum.PRODUCT_STOCK_ERROR);
+          }
+          productInfo.setProductStock(result);
+          repository.save(productInfo);
+      }
     }
 }
