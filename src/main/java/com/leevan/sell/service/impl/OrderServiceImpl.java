@@ -5,6 +5,8 @@ import com.leevan.sell.dataobject.OrderMaster;
 import com.leevan.sell.dataobject.ProductInfo;
 import com.leevan.sell.dto.CartDTO;
 import com.leevan.sell.dto.OrderDTO;
+import com.leevan.sell.enums.OrderStatusEnum;
+import com.leevan.sell.enums.PayStatusEnum;
 import com.leevan.sell.enums.ResultEnum;
 import com.leevan.sell.exception.SellException;
 import com.leevan.sell.repository.OrderDetailRepository;
@@ -72,9 +74,12 @@ public class OrderServiceImpl implements OrderService {
 
         /*3.写入订单数据库（OrderMaster和OrderDetail）*/
         OrderMaster orderMaster = new OrderMaster();
+        BeanUtils.copyProperties(orderDTO, orderMaster);
+        orderMaster.setOrderStatus(OrderStatusEnum.NEW.getCode());
+        orderMaster.setPayStatus(PayStatusEnum.WAIT.getCode());
         orderMaster.setOrderId(orderId);
         orderMaster.setOrderAmount(orderAmount);
-        BeanUtils.copyProperties(orderDTO, orderMaster);
+
 
         orderMasterRepository.save(orderMaster);
 

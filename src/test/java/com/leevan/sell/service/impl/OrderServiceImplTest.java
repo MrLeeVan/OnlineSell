@@ -41,6 +41,12 @@ public class  OrderServiceImplTest {
         o1.setProductId("1001");
         o1.setProductQuantity(10);
         orderDetailList.add(o1);
+
+        OrderDetail o2 = new OrderDetail();
+        o2.setProductId("2001");
+        o2.setProductQuantity(8);
+        orderDetailList.add(o2);
+
         orderDTO.setOrderDetailList(orderDetailList);
         OrderDTO result = orderService.create(orderDTO);
         log.info("【创建订单】 result={}",result);
