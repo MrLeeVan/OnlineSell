@@ -3,6 +3,7 @@ package com.leevan.sell.service.impl;
 import com.leevan.sell.dataobject.OrderDetail;
 import com.leevan.sell.dto.OrderDTO;
 import com.leevan.sell.enums.OrderStatusEnum;
+import com.leevan.sell.enums.PayStatusEnum;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Assert;
 import org.junit.Test;
@@ -89,5 +90,8 @@ public class  OrderServiceImplTest {
 
     @Test
     public void paid() {
+        OrderDTO orderDTO = orderService.findOne(ORDER_ID);
+        OrderDTO result = orderService.paid(orderDTO);
+        Assert.assertEquals(PayStatusEnum.SUCCESS.getCode(),result.getPayStatus());
     }
 }
