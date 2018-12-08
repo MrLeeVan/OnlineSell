@@ -6,8 +6,10 @@ import lombok.Data;
 import org.hibernate.annotations.DynamicUpdate;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Transient;
 import java.math.BigDecimal;
 import java.util.Date;
+import java.util.List;
 
 /**
  * @Author Leevan
@@ -39,5 +41,9 @@ public class OrderMaster {
     private Date createTime;
     /*更新时间*/
     private Date updateTime;
+
+   /* @Transient  //进行数据库映射的时候将其忽略掉
+    可以用DTO代替
+    private List<OrderDetail> orderDetailList;*/
 
 }

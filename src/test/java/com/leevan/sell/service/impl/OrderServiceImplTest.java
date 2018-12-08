@@ -3,10 +3,13 @@ package com.leevan.sell.service.impl;
 import com.leevan.sell.dataobject.OrderDetail;
 import com.leevan.sell.dto.OrderDTO;
 import lombok.extern.slf4j.Slf4j;
+import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.ArrayList;
@@ -26,6 +29,8 @@ public class  OrderServiceImplTest {
     private OrderServiceImpl orderService;
 
     private final String BUYER_OPENID = "1000101";
+
+    private final String ORDER_ID = "1544248688044266580";
 
     @Test
     public void create() {
@@ -50,14 +55,21 @@ public class  OrderServiceImplTest {
         orderDTO.setOrderDetailList(orderDetailList);
         OrderDTO result = orderService.create(orderDTO);
         log.info("【创建订单】 result={}",result);
+        Assert.assertNotNull(result);
     }
 
     @Test
-    public void findOne() {
+    public void findOne() throws Exception{
+        OrderDTO result = orderService.findOne(ORDER_ID);
+        log.info("【查询订单】 result={}", result);
+        Assert.assertEquals(ORDER_ID, result.getOrderId());
     }
 
     @Test
     public void findList() {
+        PageRequest request = new PageRequest(0,2);
+        Page<OrderDTO> orderDTOPage = orderService.findList(BUYER_OPENID, request);
+        Assert.assertNotEquals(0, orderDTOPage.getTotalElements());
     }
 
     @Test
