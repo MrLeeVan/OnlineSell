@@ -48,6 +48,7 @@ public class OrderServiceImpl implements OrderService {
 
     @Override
     @Transactional  //设置事务。若不成功，进行回滚！
+    /*返回的orderDTO对象，数据返回到前端*/
     public OrderDTO create(OrderDTO orderDTO) {
         /*定义订单总价*/
         BigDecimal orderAmount = new BigDecimal(BigInteger.ZERO);
@@ -80,10 +81,10 @@ public class OrderServiceImpl implements OrderService {
 
         /*3.写入订单数据库（OrderMaster和OrderDetail）*/
         OrderMaster orderMaster = new OrderMaster();
+        orderDTO.setOrderId(orderId);
         BeanUtils.copyProperties(orderDTO, orderMaster);
         orderMaster.setOrderStatus(OrderStatusEnum.NEW.getCode());
         orderMaster.setPayStatus(PayStatusEnum.WAIT.getCode());
-        orderMaster.setOrderId(orderId);
         orderMaster.setOrderAmount(orderAmount);
 
 
