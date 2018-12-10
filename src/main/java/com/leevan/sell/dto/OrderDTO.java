@@ -44,6 +44,6 @@ public class OrderDTO {
     @JsonSerialize(using = Date2LongSerializer.class)
     private Date updateTime;
 
-    List<OrderDetail> orderDetailList = new ArrayList<>();
+    List<OrderDetail> orderDetailList;
 
 }

@@ -6,12 +6,15 @@ import com.leevan.sell.dto.OrderDTO;
 import com.leevan.sell.enums.ResultEnum;
 import com.leevan.sell.exception.SellException;
 import com.leevan.sell.form.OrderForm;
+import com.leevan.sell.service.BuyerService;
 import com.leevan.sell.service.OrderService;
 import com.leevan.sell.utils.ResultVOUtil;
+import jdk.nashorn.internal.ir.annotations.Ignore;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
+import org.springframework.data.repository.query.parser.Part;
 import org.springframework.util.CollectionUtils;
 import org.springframework.util.StringUtils;
 import org.springframework.validation.BindingResult;
@@ -27,6 +30,9 @@ import java.util.Map;
  * @Author Leevan
  * @Date： 2018/12/8 20:01
  * 买家端Controller层
+ *
+ * 良好的代码习惯将逻辑处理放在Service层
+ * Controller层直接组合逻辑，调用各接口，实现各项功能！
  */
 @RestController
 @Slf4j
@@ -34,6 +40,8 @@ import java.util.Map;
 public class BuyerOrderController {
     @Autowired
     private OrderService orderService;
+    @Autowired
+    private BuyerService buyerService;
     /*创建订单*/
     @PostMapping("create")
     public ResultVO<Map<String, String>> create(@Valid OrderForm orderForm,
@@ -66,9 +74,24 @@ public class BuyerOrderController {
         Page<OrderDTO> orderDTOPage = orderService.findList(openid, request);
         return ResultVOUtil.success(orderDTOPage.getContent());
     }
-
     /*订单详情*/
-
+    @GetMapping("/detail")
+    public ResultVO<OrderDTO> detail(@RequestParam("openid") String openid,
+                                     @RequestParam("orderId") String orderId){
+        /*设置BuyerService进行订单openid验证，确认是订单用户本人才能对订单详情进行查看！*/
+        OrderDTO orderDTO = buyerService.findOrderOne(openid, orderId);
+        return ResultVOUtil.success(orderDTO);
+    }
     /*取消订单*/
+    @PostMapping("/cancel")
+    public ResultVO cancel(@RequestParam("openid") String openid,
+                                     @RequestParam("orderId") String orderId){
+       /* OrderDTO orderDTO = orderService.findOne(orderId)； orderService.cancel(orderDTO);*/
+       /*在没有设置BuyerService的时候，未进行订单验证，所以不安全！
+       * 逻辑尽量放在Service层，controller层直接调用Service层接口！*/
+        buyerService.cancelOrder(openid, orderId);
+        return ResultVOUtil.success();
+
+    }
 
 }
