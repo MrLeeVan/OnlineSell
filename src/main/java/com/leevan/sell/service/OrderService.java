@@ -23,6 +23,8 @@ public interface OrderService {
     OrderDTO finish(OrderDTO orderDTO);
     /*支付订单*/
     OrderDTO paid(OrderDTO orderDTO);
+    /*查询订单列表、卖家查询方法*/
+    Page<OrderDTO> findList( Pageable pageable);
 
 }
 

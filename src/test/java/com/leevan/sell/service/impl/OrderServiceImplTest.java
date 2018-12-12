@@ -12,6 +12,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.ArrayList;
@@ -30,7 +31,7 @@ public class  OrderServiceImplTest {
     @Autowired
     private OrderServiceImpl orderService;
 
-    private final String BUYER_OPENID = "1000101";
+    private final String BUYER_OPENID = "ew3euwhd7jw9dq";
 
     private final String ORDER_ID = "1544248688044266580";
 
@@ -93,5 +94,12 @@ public class  OrderServiceImplTest {
         OrderDTO orderDTO = orderService.findOne(ORDER_ID);
         OrderDTO result = orderService.paid(orderDTO);
         Assert.assertEquals(PayStatusEnum.SUCCESS.getCode(),result.getPayStatus());
+    }
+    @Test
+    public void findListAll(){
+        PageRequest request = new PageRequest(0,10);
+        Page<OrderDTO> orderDTOPage = orderService.findList(request);
+        Assert.assertNotEquals(0,orderDTOPage.getTotalElements());
+
     }
 }

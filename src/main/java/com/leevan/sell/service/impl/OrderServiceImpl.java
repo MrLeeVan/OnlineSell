@@ -103,6 +103,7 @@ public class OrderServiceImpl implements OrderService {
     }
 
     @Override
+    /*查询单个订单*/
     public OrderDTO findOne(String orderId) {
         OrderMaster orderMaster = orderMasterRepository.findOne(orderId);
         if(orderMaster == null){
@@ -120,6 +121,7 @@ public class OrderServiceImpl implements OrderService {
     }
 
     @Override
+    /*查询订单列表*/
     public Page<OrderDTO> findList(String buyerOpenId, Pageable pageable) {
         Page<OrderMaster> orderMasterPage = orderMasterRepository
                 .findByBuyerOpenid(buyerOpenId, pageable);
@@ -130,6 +132,7 @@ public class OrderServiceImpl implements OrderService {
     }
 
     @Override
+    /*取消订单*/
     public OrderDTO cancel(OrderDTO orderDTO) {
         OrderMaster orderMaster = new OrderMaster();
 
@@ -166,8 +169,8 @@ public class OrderServiceImpl implements OrderService {
     }
 
     @Override
-    /*完结订单*/
     @Transactional
+    /*完结订单*/
     public OrderDTO finish(OrderDTO orderDTO) {
         /*判断订单状态*/
         if(!orderDTO.getOrderStatus().equals(OrderStatusEnum.NEW.getCode())){
@@ -190,6 +193,7 @@ public class OrderServiceImpl implements OrderService {
 
     @Override
     @Transactional
+    /*支付订单*/
     public OrderDTO paid(OrderDTO orderDTO) {
         /*判断订单状态*/
         if(!orderDTO.getOrderStatus().equals(OrderStatusEnum.NEW.getCode())){
@@ -214,5 +218,15 @@ public class OrderServiceImpl implements OrderService {
         }
         return orderDTO;
 
+    }
+
+    @Override
+    /*查询订单列表、卖家查询方法*/
+    public Page<OrderDTO> findList(Pageable pageable) {
+        Page<OrderMaster> orderMasterPage = orderMasterRepository.findAll(pageable);
+        List<OrderDTO> orderDTOList = OrderMaster2OrderDTOConverter
+                .convert(orderMasterPage.getContent());
+        return new PageImpl<>(orderDTOList,
+                pageable, orderMasterPage.getTotalElements());
     }
 }
