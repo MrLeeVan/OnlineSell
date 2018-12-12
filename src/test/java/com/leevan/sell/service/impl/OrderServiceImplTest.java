@@ -99,7 +99,7 @@ public class  OrderServiceImplTest {
     public void findListAll(){
         PageRequest request = new PageRequest(0,10);
         Page<OrderDTO> orderDTOPage = orderService.findList(request);
-        Assert.assertNotEquals(0,orderDTOPage.getTotalElements());
+         Assert.assertNotEquals(0,orderDTOPage.getTotalElements());
 
     }
 }

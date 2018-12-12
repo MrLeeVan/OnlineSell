@@ -46,4 +46,12 @@ public class OrderDTO {
 
     List<OrderDetail> orderDetailList;
 
+    public OrderStatusEnum getOrderStatusEnum(){
+        return null;
+        //TODO 枚举code值获取
+    }
+    public PayStatusEnum getPayStatusEnum(){
+        return null;
+    }
+
 }
