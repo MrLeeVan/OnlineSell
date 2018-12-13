@@ -1,10 +1,12 @@
 package com.leevan.sell.dto;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.leevan.sell.dataobject.OrderDetail;
 import com.leevan.sell.enums.OrderStatusEnum;
 import com.leevan.sell.enums.PayStatusEnum;
+import com.leevan.sell.utils.EnumUtils;
 import com.leevan.sell.utils.Serializer.Date2LongSerializer;
 import lombok.Data;
 
@@ -46,12 +48,13 @@ public class OrderDTO {
 
     List<OrderDetail> orderDetailList;
 
+    @JsonIgnore  //当OrderDTO被用作Bean传出去的时候 ，忽略本条属性！
     public OrderStatusEnum getOrderStatusEnum(){
-        return null;
-        //TODO 枚举code值获取
+        return EnumUtils.getByCode( orderStatus, OrderStatusEnum.class );
     }
+    @JsonIgnore
     public PayStatusEnum getPayStatusEnum(){
-        return null;
+        return EnumUtils.getByCode( payStatus, PayStatusEnum.class );
     }
 
 }

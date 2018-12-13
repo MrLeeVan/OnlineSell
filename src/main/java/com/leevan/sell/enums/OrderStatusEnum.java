@@ -8,7 +8,7 @@ import lombok.Getter;
  * 订单状态枚举
  */
 @Getter
-public enum OrderStatusEnum {
+public enum OrderStatusEnum implements CodeEnum{
     NEW(0,"新订单"),
     FINISHED(1,"订单完结"),
     CANCEL(2,"订单取消");
