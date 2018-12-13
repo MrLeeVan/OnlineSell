@@ -1,20 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list id="6ea6de5e-0139-48cf-8d8b-8adddc034f60" name="Revert: 删除目录target" comment="" />
     <list default="true" id="6930dc13-d60f-4dad-bf85-bd6dc5f3f539" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/leevan/sell/enums/CodeEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/leevan/sell/utils/EnumUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/common/error.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/common/success.ftl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leevan/sell/controller/SellerOrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leevan/sell/controller/SellerOrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leevan/sell/dto/OrderDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leevan/sell/dto/OrderDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leevan/sell/enums/OrderStatusEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leevan/sell/enums/OrderStatusEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leevan/sell/enums/PayStatusEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leevan/sell/enums/PayStatusEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leevan/sell/enums/ResultEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leevan/sell/enums/ResultEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/lee.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/order/detail.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/order/list.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/order/list.ftl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/leevan/sell/controller/SellerOrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leevan/sell/controller/SellerOrderController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/leevan/sell/dto/OrderDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leevan/sell/dto/OrderDTO.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/leevan/sell/enums/OrderStatusEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leevan/sell/enums/OrderStatusEnum.class" afterDir="false" />
@@ -23,6 +11,7 @@
       <change beforePath="$PROJECT_DIR$/target/classes/templates/lee.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/order/list.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/order/list.ftl" afterDir="false" />
     </list>
+    <list id="6ea6de5e-0139-48cf-8d8b-8adddc034f60" name="Revert: 删除目录target" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -269,39 +258,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="sell" type="462c0819:PsiDirectoryNode" />
               <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sell" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sell" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sell" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sell" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sell" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sell" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sell" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sell" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="order" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="sell" type="b2602c69:ProjectViewProjectNode" />
@@ -577,7 +533,7 @@
       <workItem from="1544608413785" duration="92000" />
       <workItem from="1544608537250" duration="6418000" />
       <workItem from="1544675453439" duration="9858000" />
-      <workItem from="1544685590186" duration="12487000" />
+      <workItem from="1544685590186" duration="12739000" />
     </task>
     <task id="LOCAL-00001" summary="first_try">
       <created>1543830401741</created>
@@ -747,7 +703,14 @@
       <option name="project" value="LOCAL" />
       <updated>1544616714572</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Version 1.17  卖家后端管理 卖家查看订单详情 买家取消订单">
+      <created>1544702682253</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1544702682253</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -783,7 +746,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99012000" />
+    <option name="totallyTimeSpent" value="99264000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -796,10 +759,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.16778524" side_tool="true" visible="true" weight="0.39027983" />
+      <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.12550336" side_tool="true" visible="true" weight="0.269514" />
       <window_info anchor="right" id="Maven Projects" order="9" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info id="Capture Tool" order="7" />
@@ -815,10 +777,10 @@
       <window_info id="Image Layers" order="3" />
       <window_info anchor="bottom" id="Java Enterprise" order="10" sideWeight="0.49932975" weight="0.329429" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.8322148" visible="true" weight="0.39027983" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8315436" weight="0.39027983" />
       <window_info anchor="bottom" id="Version Control" order="12" sideWeight="0.7966443" weight="0.35198823" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.3298969" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.8751678" weight="0.269514" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.87449664" visible="true" weight="0.269514" />
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4988399" visible="true" weight="0.16912752" />
       <window_info anchor="right" id="Bean Validation" order="8" />
       <window_info id="Web" order="6" side_tool="true" />
@@ -888,7 +850,8 @@
     <MESSAGE value="Version 1.14  卖家订单开始" />
     <MESSAGE value="Version 1.15  卖家后端管理，订单模块" />
     <MESSAGE value="Version 1.16  卖家后端管理(刷新）" />
-    <option name="LAST_COMMIT_MESSAGE" value="Version 1.16  卖家后端管理(刷新）" />
+    <MESSAGE value="Version 1.17  卖家后端管理 卖家查看订单详情 买家取消订单" />
+    <option name="LAST_COMMIT_MESSAGE" value="Version 1.17  卖家后端管理 卖家查看订单详情 买家取消订单" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
