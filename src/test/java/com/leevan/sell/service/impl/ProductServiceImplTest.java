@@ -1,6 +1,7 @@
 package com.leevan.sell.service.impl;
 
 import com.leevan.sell.dataobject.ProductInfo;
+import com.leevan.sell.enums.ProductStatusEnum;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -52,5 +53,15 @@ public class ProductServiceImplTest {
                 0, 2);
         ProductInfo result = productService.save( productInfo );
         Assert.assertNotNull( result );
+    }
+    @Test
+    public void onSale(){
+        ProductInfo result = productService.onSale( "1001" );
+        Assert.assertEquals( ProductStatusEnum.UP, result.getProductStatusEnum() );
+    }
+    @Test
+    public void offSale(){
+        ProductInfo result = productService.offSale( "1001" );
+        Assert.assertEquals( ProductStatusEnum.DOWN, result.getProductStatusEnum() );
     }
 }

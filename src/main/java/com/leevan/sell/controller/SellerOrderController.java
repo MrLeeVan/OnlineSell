@@ -26,7 +26,7 @@ import java.util.Map;
 public class SellerOrderController {
     @Autowired
     private OrderService orderService;
-    /*
+    /**
     * 订单列表
     * @param page 第几页 从第一页开始；
     * @param size 一页有多少条数据
@@ -34,7 +34,7 @@ public class SellerOrderController {
     * */
     @GetMapping("/list")
      public ModelAndView list(@RequestParam (value = "page" ,defaultValue = "1") Integer page,
-                              @RequestParam (value = "size" , defaultValue = "3") Integer size,
+                              @RequestParam (value = "size" , defaultValue = "10") Integer size,
                               Map<String, Object> map){
          PageRequest request = new PageRequest(page-1, size);
          Page<OrderDTO> orderDTOPage =  orderService.findList(request);
@@ -44,7 +44,12 @@ public class SellerOrderController {
          map.put( "size", size );
          return new ModelAndView("order/list",map);
      }
-
+    /**
+     * 卖家订单取消
+     * @param orderId ；
+     * @param map
+     * @return
+     * */
     @GetMapping("/cancel")
     public ModelAndView cancel(@RequestParam ("orderId") String orderId,
                                 Map<String, Object> map){
@@ -63,6 +68,12 @@ public class SellerOrderController {
          //TODO  操作后跳转到当前页
         return new ModelAndView( "/common/success",map );
     }
+    /**
+     * 订单详情
+     * @param orderId ；
+     * @param map
+     * @return
+     * */
     @RequestMapping("/detail")
     public ModelAndView detail(@RequestParam("orderId")String orderId,
                                Map<String, Object> map){
@@ -78,7 +89,12 @@ public class SellerOrderController {
         map.put( "orderDTO", orderDTO );
         return new ModelAndView( "order/detail",map );
     }
-
+    /**
+     * 卖家订单完结
+     * @param orderId ；
+     * @param map
+     * @return
+     * */
     @RequestMapping("/finish")
     public ModelAndView finish(@RequestParam("orderId") String orderId,
                                Map<String, Object> map){

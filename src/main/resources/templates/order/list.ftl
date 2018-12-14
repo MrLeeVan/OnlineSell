@@ -1,8 +1,8 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>卖家商品列表</title>
-    <link href="https://cdn.bootcss.com/twitter-bootstrap/3.0.1/css/bootstrap.min.css" rel="stylesheet">
+    <title>卖家管理系统</title>
+    <link href="https://cdn.bootcss.com/twitter-bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/sell/css/style.css">
 </head>
 <body>
@@ -11,10 +11,13 @@
         <#include "../common/nav.ftl">
     <#--主要内容content-->
        <div class="page-content-wrapper">
-           <div class="container">
+           <div class="container-fluit">
                <div class="row clearfix">
                    <div class="col-md-12 column">
-                       <table class="table">
+                       <h2 class="text-center text-info">
+                           订单管理
+                       </h2>
+                       <table class="table table-condensed table-bordered">
                            <thead>
                            <tr>
                                <th>订单Id</th>

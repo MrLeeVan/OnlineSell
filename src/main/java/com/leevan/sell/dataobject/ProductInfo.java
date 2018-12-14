@@ -1,11 +1,15 @@
 package com.leevan.sell.dataobject;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.leevan.sell.enums.ProductStatusEnum;
+import com.leevan.sell.utils.EnumUtils;
 import lombok.Data;
 import org.hibernate.annotations.DynamicUpdate;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import java.math.BigDecimal;
+import java.util.Date;
 
 /**
  * @Author Leevan
@@ -34,6 +38,10 @@ public class ProductInfo {
     /*商品类目*/
     private Integer categoryType;
 
+    private  Date createTime;
+
+    private Date updateTime;
+
     public void ProductInfo() {
         /*默认构造方法*/
     }
@@ -47,6 +55,10 @@ public class ProductInfo {
         this.productIcon = productIcon;
         this.productStatus = productStatus;
         this.categoryType = categoryType;
+    }
+    @JsonIgnore
+    public ProductStatusEnum getProductStatusEnum(){
+        return EnumUtils.getByCode( productStatus, ProductStatusEnum.class );
     }
 
 }
