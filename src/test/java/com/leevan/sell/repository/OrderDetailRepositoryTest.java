@@ -19,7 +19,7 @@ import static org.junit.Assert.*;
  */
 @SpringBootTest
 @RunWith(SpringRunner.class)
-public class OrderDetailRepositoryTest {
+public class  OrderDetailRepositoryTest {
     @Autowired
     private OrderDetailRepository repository;
     @Test
