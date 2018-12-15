@@ -1,6 +1,7 @@
 package com.leevan.sell.dataobject;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.leevan.sell.enums.PayStatusEnum;
 import com.leevan.sell.enums.ProductStatusEnum;
 import com.leevan.sell.utils.EnumUtils;
 import lombok.Data;
@@ -34,7 +35,7 @@ public class ProductInfo {
     /*商品展示图*/
     private String productIcon;
     /*商品状态（0上架/1下架）*/
-    private Integer productStatus;
+    private Integer productStatus = ProductStatusEnum.UP.getCode();
     /*商品类目*/
     private Integer categoryType;
 
@@ -42,8 +43,7 @@ public class ProductInfo {
 
     private Date updateTime;
 
-    public void ProductInfo() {
-        /*默认构造方法*/
+    public  ProductInfo() {/*默认构造方法*/
     }
 
     public ProductInfo(String productId, String productName, BigDecimal productPrice, Integer productStock, String productDescription, String productIcon, Integer productStatus, Integer categoryType) {

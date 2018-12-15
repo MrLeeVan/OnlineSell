@@ -1,20 +1,29 @@
 package com.leevan.sell.controller;
 
+import com.leevan.sell.dataobject.ProductCategory;
 import com.leevan.sell.dataobject.ProductInfo;
 import com.leevan.sell.enums.ResultEnum;
 import com.leevan.sell.exception.SellException;
+import com.leevan.sell.form.ProductForm;
+import com.leevan.sell.service.CategoryService;
 import com.leevan.sell.service.ProductService;
+import com.leevan.sell.utils.KeyUtil;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Controller;
+import org.springframework.util.StringUtils;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
+import javax.validation.Valid;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -27,6 +36,8 @@ import java.util.Map;
 public class SellerProductController {
     @Autowired
     private ProductService productService;
+    @Autowired
+    private CategoryService categoryService;
     /**
      * 订单列表
      * @param page 第几页 从第一页开始；
@@ -93,5 +104,51 @@ public class SellerProductController {
         //TODO  操作后跳转到当前页
         return new ModelAndView( "/common/success",map );
     }
+    @GetMapping("/index")
+    public ModelAndView index(@RequestParam(value = "productId", required = false) String productId,
+                              Map<String, Object> map){
+        if (!StringUtils.isEmpty( productId )){
+            ProductInfo productInfo = productService.findOne( productId );
+            map.put( "productInfo", productInfo );
+        }
+        List<ProductCategory> categoryList = categoryService.findAll() ;
+        map.put( "categoryList", categoryList );
+        return new ModelAndView( "product/index", map );
+    }
+    /**
+     * 商品信息更新
+     * @param form
+     * @param bindingResult
+     * @param map
+     * @return
+     * */
+    @PostMapping("/save")
+    public ModelAndView save(@Valid ProductForm form,
+                             BindingResult bindingResult,
+                             Map<String, Object> map){
+        if(bindingResult.hasErrors()){
+            map.put( "msg", bindingResult.getFieldError().getDefaultMessage() );
+            map.put( "url", "/sell/seller/product/index" );
+            return new ModelAndView( "common/error", map );
+        }
+        ProductInfo productInfo = new ProductInfo(  );
+        /*如果表单传来的productId数据为空，则为新增数据！*/
+        if (!StringUtils.isEmpty( form.getProductId() )){
+            /*productId不为空，通过id查询到记录*/
+            productInfo = productService.findOne( form.getProductId() );
+        }else{
+            form .setProductId( KeyUtil.genUniqueKey() );
+        }
+        BeanUtils.copyProperties( form, productInfo );
+        try{
+            productService.save( productInfo );
+        }catch(SellException e){
+         map.put( "msg", e.getMessage() );
+         map.put( "url", "/sell/seller/product/index" );
+         return new ModelAndView( "common/error", map );
 
+        }
+        map.put( "url", "/sell/seller/product/list" );
+        return new ModelAndView( "common/success", map );
+    }
 }
