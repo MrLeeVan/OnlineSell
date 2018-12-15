@@ -1,22 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6930dc13-d60f-4dad-bf85-bd6dc5f3f539" name="Default" comment="Version 1.17  卖家后端管理 卖家查看订单详情 买家取消订单">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/leevan/sell/controller/SellerCategoryController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/leevan/sell/form/CategoryForm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/category/index.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/category/list.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/leevan/sell/controller/SellerOrderController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/leevan/sell/dto/OrderDTO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/leevan/sell/enums/OrderStatusEnum.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/leevan/sell/enums/PayStatusEnum.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/leevan/sell/enums/ResultEnum.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/templates/order/list.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leevan/sell/controller/SellerProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leevan/sell/controller/SellerProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leevan/sell/dataobject/ProductCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leevan/sell/dataobject/ProductCategory.java" afterDir="false" />
-    </list>
     <list id="6ea6de5e-0139-48cf-8d8b-8adddc034f60" name="Revert: 删除目录target" comment="" />
+    <list default="true" id="6930dc13-d60f-4dad-bf85-bd6dc5f3f539" name="Default" comment="Version 1.17  卖家后端管理 卖家查看订单详情 买家取消订单" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -48,7 +34,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/leevan/sell/controller/SellerProductController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="163">
-              <caret line="132" column="9" lean-forward="true" selection-start-line="128" selection-start-column="8" selection-end-line="132" selection-end-column="9" />
+              <caret line="132" column="9" selection-start-line="128" selection-start-column="8" selection-end-line="132" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -90,7 +76,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/category/list.ftl">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="275">
-              <caret line="44" column="22" lean-forward="true" selection-start-line="44" selection-start-column="22" selection-end-line="44" selection-end-column="22" />
+              <caret line="44" column="22" selection-start-line="44" selection-start-column="22" selection-end-line="44" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -99,7 +85,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/leevan/sell/dto/OrderDTO.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="250">
-              <caret line="46" column="28" lean-forward="true" selection-start-line="42" selection-start-column="3" selection-end-line="46" selection-end-column="28" />
+              <caret line="46" column="28" selection-start-line="42" selection-start-column="3" selection-end-line="46" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -129,7 +115,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/order/list.ftl">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="250">
-              <caret line="35" column="33" lean-forward="true" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="36" />
+              <caret line="35" column="33" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -660,7 +646,7 @@
       <workItem from="1544675453439" duration="9858000" />
       <workItem from="1544685590186" duration="14683000" />
       <workItem from="1544760413419" duration="22920000" />
-      <workItem from="1544850081087" duration="17480000" />
+      <workItem from="1544850081087" duration="17734000" />
     </task>
     <task id="LOCAL-00001" summary="first_try">
       <created>1543830401741</created>
@@ -865,7 +851,14 @@
       <option name="project" value="LOCAL" />
       <updated>1544870238313</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Version 1.22  卖家后端管理完结  各项功能模块完善">
+      <created>1544874959361</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1544874959361</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -901,7 +894,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="141608000" />
+    <option name="totallyTimeSpent" value="141862000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -916,7 +909,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.17583893" side_tool="true" visible="true" weight="0.460972" />
+      <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.13020134" side_tool="true" visible="true" weight="0.5655376" />
       <window_info anchor="right" id="Maven Projects" order="9" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info id="Capture Tool" order="7" />
@@ -932,10 +925,10 @@
       <window_info id="Image Layers" order="3" />
       <window_info anchor="bottom" id="Java Enterprise" order="10" sideWeight="0.49932975" weight="0.329429" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Version Control" order="12" sideWeight="0.79530203" weight="0.29602358" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.82416105" visible="true" weight="0.460972" />
+      <window_info anchor="bottom" id="Version Control" order="12" sideWeight="0.7946309" weight="0.29602358" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.82416105" weight="0.460972" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.3298969" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.8704698" weight="0.2371134" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.86979866" visible="true" weight="0.5655376" />
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4988399" visible="true" weight="0.1590604" />
       <window_info anchor="right" id="Bean Validation" order="8" />
       <window_info id="Web" order="6" side_tool="true" />
@@ -982,7 +975,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="版本一" />
     <MESSAGE value="版本1.02" />
     <MESSAGE value="版本1.03" />
     <MESSAGE value="版本1.04" />
@@ -1007,7 +999,8 @@
     <MESSAGE value="Version 1.18  卖家后端管理订单部分功能完善 页面布局实现" />
     <MESSAGE value="Version 1.19  卖家后端管理买家商品上下架功能实现" />
     <MESSAGE value="Version 1.21  卖家后端管理 商品的管理模块功能完善 商品信息添加修改等" />
-    <option name="LAST_COMMIT_MESSAGE" value="Version 1.21  卖家后端管理 商品的管理模块功能完善 商品信息添加修改等" />
+    <MESSAGE value="Version 1.22  卖家后端管理完结  各项功能模块完善" />
+    <option name="LAST_COMMIT_MESSAGE" value="Version 1.22  卖家后端管理完结  各项功能模块完善" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1309,21 +1302,21 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/order/list.ftl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
-          <caret line="35" column="33" lean-forward="true" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="36" />
+          <caret line="35" column="33" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="36" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/leevan/sell/dto/OrderDTO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
-          <caret line="46" column="28" lean-forward="true" selection-start-line="42" selection-start-column="3" selection-end-line="46" selection-end-column="28" />
+          <caret line="46" column="28" selection-start-line="42" selection-start-column="3" selection-end-line="46" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/category/list.ftl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="275">
-          <caret line="44" column="22" lean-forward="true" selection-start-line="44" selection-start-column="22" selection-end-line="44" selection-end-column="22" />
+          <caret line="44" column="22" selection-start-line="44" selection-start-column="22" selection-end-line="44" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -1361,7 +1354,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/leevan/sell/controller/SellerProductController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="163">
-          <caret line="132" column="9" lean-forward="true" selection-start-line="128" selection-start-column="8" selection-end-line="132" selection-end-column="9" />
+          <caret line="132" column="9" selection-start-line="128" selection-start-column="8" selection-end-line="132" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
