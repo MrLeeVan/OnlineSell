@@ -55,7 +55,6 @@ public class SellerCategoryController {
         }
         return new ModelAndView( "category/index", map );
     }
-
     /**
      * 保存、更改
      * @param form

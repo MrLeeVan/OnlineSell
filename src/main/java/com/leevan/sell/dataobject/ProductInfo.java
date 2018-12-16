@@ -37,11 +37,11 @@ public class ProductInfo {
     /*商品状态（0上架/1下架）*/
     private Integer productStatus = ProductStatusEnum.UP.getCode();
     /*商品类目*/
-    private Integer categoryType;
-
-    private  Date createTime;
+    private Integer categoryType; private  Date createTime;
 
     private Date updateTime;
+
+
 
     public  ProductInfo() {/*默认构造方法*/
     }

@@ -1,0 +1,35 @@
+package com.leevan.sell.repository;
+
+import com.leevan.sell.dataobject.SellerInfo;
+import org.junit.Assert;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.junit4.SpringRunner;
+
+import static org.junit.Assert.*;
+
+/**
+ * @Author Leevan
+ * @Date： 2018/12/16 16:40
+ */
+@SpringBootTest
+@RunWith( SpringRunner.class )
+public class SellerInfoRepositoryTest {
+    @Autowired
+    private SellerInfoRepository repository;
+
+    @Test
+    public void saveTest(){
+        SellerInfo sellerInfo = new SellerInfo("1", "lee","123","123l");
+        SellerInfo result = repository.save( sellerInfo );
+        Assert.assertNotNull(result);
+    }
+    @Test
+    public void findByOpenId() {
+        SellerInfo sellerInfo = repository.findByOpenId( "123l" );
+        System.out.println(sellerInfo.getOpenId());
+        Assert.assertNotEquals(0, sellerInfo);
+    }
+}
