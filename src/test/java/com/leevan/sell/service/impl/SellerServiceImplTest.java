@@ -1,6 +1,6 @@
 package com.leevan.sell.service.impl;
 
-import com.leevan.sell.dataobject.SellerInfo;
+import com.leevan.sell.dataobject.SellerInfor;
 import com.leevan.sell.repository.SellerInfoRepository;
 import com.leevan.sell.service.SellerService;
 import org.junit.Assert;
@@ -19,13 +19,13 @@ import static org.junit.Assert.*;
 @SpringBootTest
 @RunWith(SpringRunner.class)
 public class SellerServiceImplTest {
-    private static final String openid = "123l";
+    private static final String sellerId = "123";
     @Autowired
     private SellerService sellerService;
     @Test
-    public void findSellerInfoByOpenId() {
-        SellerInfo sellerInfo = sellerService.findSellerInfoByOpenId( openid );
-        Assert.assertEquals(openid, sellerInfo.getOpenId());
+    public void findBySellerId() {
+        SellerInfor sellerInfor = sellerService.findBySellerId( sellerId );
+        Assert.assertEquals(sellerId, sellerInfor.getSellerId());
     }
 
 }

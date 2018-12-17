@@ -1,6 +1,6 @@
 package com.leevan.sell.service.impl;
 
-import com.leevan.sell.dataobject.SellerInfo;
+import com.leevan.sell.dataobject.SellerInfor;
 import com.leevan.sell.repository.SellerInfoRepository;
 import com.leevan.sell.service.SellerService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,13 +14,13 @@ import org.springframework.stereotype.Service;
 public class SellerServiceImpl implements SellerService {
     @Autowired
     private SellerInfoRepository sellerInfoRepository;
-    @Override
-    public SellerInfo findSellerInfoByOpenId(String openId) {
+   /* @Override
+    public SellerInfor findSellerInfoByOpenId(String openId) {
         return sellerInfoRepository.findByOpenId( openId );
-    }
+    }*/
 
     @Override
-    public SellerInfo findBySellerId(String sellerId) {
+    public SellerInfor findBySellerId(String sellerId) {
         return sellerInfoRepository.findBySellerId( sellerId );
     }
 }

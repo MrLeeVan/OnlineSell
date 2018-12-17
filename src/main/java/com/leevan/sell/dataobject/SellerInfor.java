@@ -12,7 +12,7 @@ import java.util.Date;
  */
 @Entity
 @Data
-public class SellerInfo {
+public class SellerInfor {
     @Id
     /*卖家用户id*/
     private String sellerId;
@@ -20,20 +20,20 @@ public class SellerInfo {
     private String userName;
     /*买家登录密码*/
     private String password;
-    /*卖家访问OpenId*/
-    private String openId;
+  /*  *//*卖家访问OpenId*//*
+    private String openId;*/
     /*创建时间*/
     private Date createTime;
     /*更新时间*/
     private Date updateTime;
-    public SellerInfo(){
+    public SellerInfor(){
         /*默认构造方法*/
     }
-    public SellerInfo(String sellerId, String userName, String password, String openId) {
+    public SellerInfor(String sellerId, String userName, String password, String openId) {
         this.sellerId = sellerId;
         this.userName = userName;
         this.password = password;
-        this.openId = openId;
+    /*    this.openId = openId;*/
 
     }
 }

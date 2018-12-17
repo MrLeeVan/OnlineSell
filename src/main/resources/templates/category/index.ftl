@@ -11,7 +11,7 @@
         <#include "../common/nav.ftl">
 <#--主要内容content-->
     <div class="page-content-wrapper">
-        <div class="container-fluit">
+        <div class="container">
 
             <div class="row clearfix">
                 <div class="col-md-12 column">
