@@ -1,10 +1,95 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list id="6ea6de5e-0139-48cf-8d8b-8adddc034f60" name="Revert: 删除目录target" comment="" />
     <list default="true" id="6930dc13-d60f-4dad-bf85-bd6dc5f3f539" name="Default" comment="Version 1.17  卖家后端管理 卖家查看订单详情 买家取消订单">
+      <change beforePath="$PROJECT_DIR$/.gitee/ISSUE_TEMPLATE.zh-CN.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitee/PULL_REQUEST_TEMPLATE.zh-CN.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leevan/sell/SellApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leevan/sell/VO/ProductInfoVO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leevan/sell/VO/ProductVO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leevan/sell/VO/ResultVO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leevan/sell/controller/BuyerOrderController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leevan/sell/controller/BuyerProductController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leevan/sell/controller/SellerCategoryController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leevan/sell/controller/SellerLoginController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leevan/sell/controller/SellerOrderController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leevan/sell/controller/SellerProductController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leevan/sell/converter/OrderForm2OrderDTOConverter$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leevan/sell/converter/OrderForm2OrderDTOConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leevan/sell/converter/OrderMaster2OrderDTOConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leevan/sell/dataobject/OrderDetail.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leevan/sell/dataobject/OrderMaster.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leevan/sell/dataobject/ProductCategory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leevan/sell/dataobject/ProductInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leevan/sell/dataobject/SellerInfor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leevan/sell/dto/CartDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leevan/sell/dto/OrderDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leevan/sell/enums/CodeEnum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leevan/sell/enums/OrderStatusEnum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leevan/sell/enums/PayStatusEnum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leevan/sell/enums/ProductStatusEnum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leevan/sell/enums/ResultEnum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leevan/sell/exception/SellException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leevan/sell/form/CategoryForm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leevan/sell/form/OrderForm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leevan/sell/form/ProductForm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leevan/sell/form/SellerForm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leevan/sell/repository/OrderDetailRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leevan/sell/repository/OrderMasterRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leevan/sell/repository/ProductCategoryRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leevan/sell/repository/ProductInfoRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leevan/sell/repository/SellerInfoRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leevan/sell/service/BuyerService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leevan/sell/service/CategoryService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leevan/sell/service/OrderService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leevan/sell/service/ProductService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leevan/sell/service/SellerService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leevan/sell/service/impl/BuyerServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leevan/sell/service/impl/CategoryServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leevan/sell/service/impl/OrderServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leevan/sell/service/impl/ProductServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leevan/sell/service/impl/SellerServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leevan/sell/utils/EnumUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leevan/sell/utils/KeyUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leevan/sell/utils/ResultVOUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leevan/sell/utils/Serializer/Date2LongSerializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/logback-spring" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/UI/index.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/UI/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/UI/register.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/UI/success.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/category/index.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/category/list.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/common/error.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/common/nav.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/common/success.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/login/login.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/order/detail.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/order/list.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/product/index.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/product/list.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sell.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sell.jar.original" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/leevan/sell/Logtest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/leevan/sell/SellApplicationTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/leevan/sell/repository/OrderDetailRepositoryTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/leevan/sell/repository/OrderMasterRepositoryTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/leevan/sell/repository/ProductCategoryRepositoryTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/leevan/sell/repository/ProductInfoRepositoryTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/leevan/sell/repository/SellerInfoRepositoryTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/leevan/sell/service/impl/CategoryServiceImplTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/leevan/sell/service/impl/OrderServiceImplTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/leevan/sell/service/impl/ProductServiceImplTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/leevan/sell/service/impl/SellerServiceImplTest.class" beforeDir="false" />
     </list>
+    <list id="6ea6de5e-0139-48cf-8d8b-8adddc034f60" name="Revert: 删除目录target" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -107,15 +192,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProductForm.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/leevan/sell/form/ProductForm.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -144,7 +220,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/leevan/sell/enums/PayStatusEnum.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/leevan/sell/enums/ProductStatusEnum.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/leevan/sell/enums/ResultEnum.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/leevan/sell/exception/SellException.java" />
@@ -193,8 +268,9 @@
         <option value="$PROJECT_DIR$/src/main/java/com/leevan/sell/service/impl/CategoryServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/leevan/sell/controller/BuyerProductController.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/leevan/sell/service/impl/OrderServiceImplTest.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/src/main/java/com/leevan/sell/controller/SellerProductController.java" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
       </list>
     </option>
   </component>
@@ -214,7 +290,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="692" />
     <option name="y" value="110" />
     <option name="width" value="1347" />
@@ -396,11 +472,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sell" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sell" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="sell" type="b2602c69:ProjectViewProjectNode" />
@@ -714,7 +785,7 @@
       <workItem from="1561199056418" duration="118000" />
       <workItem from="1561703859222" duration="653000" />
       <workItem from="1561778152131" duration="1939000" />
-      <workItem from="1561859131008" duration="1281000" />
+      <workItem from="1561859131008" duration="1906000" />
     </task>
     <task id="LOCAL-00001" summary="first_try">
       <created>1543830401741</created>
@@ -983,7 +1054,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="254519000" />
+    <option name="totallyTimeSpent" value="255144000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -995,7 +1066,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="554" y="88" width="1077" height="536" extended-state="0" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.17181209" side_tool="true" weight="0.45508102" />
@@ -1016,8 +1087,8 @@
       <window_info anchor="bottom" id="Version Control" order="12" sideWeight="0.7946309" weight="0.29602358" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8228188" weight="0.40353462" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.3298969" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.82818794" visible="true" weight="0.79045093" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49698794" visible="true" weight="0.23992133" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.82818794" visible="true" weight="0.4904271" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49698794" visible="true" weight="0.16375838" />
       <window_info anchor="right" id="Bean Validation" order="8" />
       <window_info id="Web" order="6" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="7" />
@@ -1184,13 +1255,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/leevan/sell/enums/PayStatusEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/login/login.ftl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -1521,6 +1585,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1734">
           <caret line="67" column="9" selection-start-line="67" selection-start-column="9" selection-end-line="67" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
         </state>
       </provider>
     </entry>
