@@ -17,7 +17,7 @@ import java.util.List;
 
 /**
  * @Author Leevan
- * @Date： 2018/12/4 19:07
+ * @Date： 2019/5/4 19:07
  */
 @SpringBootTest
 @RunWith( SpringRunner.class )
@@ -47,10 +47,10 @@ public class ProductServiceImplTest {
 
     @Test
     public void save() {
-        ProductInfo productInfo = new ProductInfo("2001",
-                "苹果", new BigDecimal( 6 ),150,
-                "香甜可口，嘎嘣脆！", "http:xxxx.jpg",
-                0, 2);
+        ProductInfo productInfo = new ProductInfo("4002",
+                "珍珠奶茶", new BigDecimal( 6 ),150,
+                "香香的口味", "http:xxxx.jpg",
+                0, 4);
         ProductInfo result = productService.save( productInfo );
         Assert.assertNotNull( result );
     }

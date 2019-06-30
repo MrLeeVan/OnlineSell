@@ -20,12 +20,12 @@ import java.util.Map;
 
 /**
  * @Author Leevan
- * @Date： 2018/12/15 18:41
+ * @Date： 2019/5/15 18:41
  * 卖家类目列表
  */
 @RequestMapping("/seller/category")
 @Controller
-public class SellerCategoryController {
+public class  SellerCategoryController {
     @Autowired
     private CategoryService categoryService;
     /**

@@ -22,7 +22,7 @@ import java.util.Map;
 
 /**
  * @Author Leevan
- * @Date： 2018/12/16 19:32
+ * @Date： 2019/5/16 19:32
  */
 @RequestMapping("/seller/UI")
 @Controller
@@ -41,7 +41,7 @@ public class SellerLoginController {
      */
     @GetMapping("/index")
     public ModelAndView index(@RequestParam(value = "sellerId", required = false) String sellerId,
-                              Map<String, Object> map){
+                              Map<String, Object> map) {
         if (!StringUtils.isEmpty( sellerId )){
             SellerInfor sellerInfor = sellerService.findBySellerId( sellerId );
             map.put( "sellerInfo", sellerInfor );
@@ -62,4 +62,5 @@ public class SellerLoginController {
         map.put( "url", "/sell/seller/UI/index" );
         return new ModelAndView( "common/success", map );
     }
+
 }

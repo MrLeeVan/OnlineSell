@@ -22,7 +22,7 @@ import static org.junit.Assert.*;
 
 /**
  * @Author Leevan
- * @Date： 2018/12/7 15:46
+ * @Date： 2019/5/7 15:46
  */
 @SpringBootTest
 @RunWith(SpringRunner.class)
@@ -42,7 +42,6 @@ public class  OrderServiceImplTest {
         orderDTO.setBuyerAddress("勺子村");
         orderDTO.setBuyerPhone("1542565462");
         orderDTO.setBuyerOpenid(BUYER_OPENID);
-
         /*购物车*/
         List<OrderDetail> orderDetailList = new ArrayList<>();
         OrderDetail o1 = new OrderDetail();

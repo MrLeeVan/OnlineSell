@@ -7,7 +7,7 @@ import java.util.List;
 
 /**
  * @Author Leevan
- * @Date： 2018/12/5 13:46
+ * @Date： 2019/5/5 13:46
  * 商品（包含类目）
  */
 @Data

@@ -1,12 +1,10 @@
 package com.leevan.sell.dataobject;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.leevan.sell.enums.PayStatusEnum;
 import com.leevan.sell.enums.ProductStatusEnum;
 import com.leevan.sell.utils.EnumUtils;
 import lombok.Data;
 import org.hibernate.annotations.DynamicUpdate;
-
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import java.math.BigDecimal;
@@ -14,7 +12,7 @@ import java.util.Date;
 
 /**
  * @Author Leevan
- * @Date： 2018/12/4 16:55
+ * @Date： 2019/5/4 16:55
  * 商品信息
  */
 @Entity

@@ -4,7 +4,7 @@ import lombok.Getter;
 
 /**
  * @Author Leevan
- * @Date： 2018/12/7 14:06
+ * @Date： 2019/5/7 14:06
  * 商品状态枚举类
  */
 @Getter

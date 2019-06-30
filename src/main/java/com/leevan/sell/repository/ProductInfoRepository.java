@@ -6,7 +6,7 @@ import java.util.List;
 
 /**
  * @Author Leevan
- * @Date： 2018/12/4 17:14
+ * @Date： 2019/5/4 17:14
  */
 public interface ProductInfoRepository extends JpaRepository<ProductInfo,String> {
     /*查询上架商品*/

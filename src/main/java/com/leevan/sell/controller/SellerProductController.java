@@ -28,7 +28,7 @@ import java.util.Map;
 
 /**
  * @Author Leevan
- * @Date： 2018/12/14 16:49
+ * @Date： 2019/5/14 16:49
  */
 @Controller
 @Slf4j
@@ -55,7 +55,6 @@ public class SellerProductController {
         map.put( "currentPage", page );
         map.put( "size", size );
         return new ModelAndView("product/list",map);
-
     }
 
     /**

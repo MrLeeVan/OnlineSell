@@ -20,7 +20,7 @@ import java.util.stream.Collectors;
 
 /**
  * @Author Leevan
- * @Date： 2018/12/4 19:58
+ * @Date： 2019/5/4 19:58
  *
  * 买家商品
  */
@@ -38,10 +38,10 @@ public class BuyerProductController {
         List<ProductInfo> productInfoList = productService.findUpAll();
         /*2.查询类目（一次性查询)*/
         /*传统方法*/
- //       List<Integer> categoryTypeList = new ArrayList<>();
- //      for (ProductInfo productInfo: productInfoList){
- //          categoryTypeList.add(productInfo.getCategoryType());
- //      }
+        //       List<Integer> categoryTypeList = new ArrayList<>();
+        //      for (ProductInfo productInfo: productInfoList){
+        //          categoryTypeList.add(productInfo.getCategoryType());
+        //      }
         /*精简方法 Java8 lambda*/
         List<Integer> categoryTypeList = productInfoList.stream().
                 map(e ->e.getCategoryType()).collect(Collectors.toList());

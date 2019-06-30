@@ -7,7 +7,7 @@ import javax.validation.constraints.NotNull;
 
 /**
  * @Author Leevan
- * @Date： 2018/12/17 14:54
+ * @Date： 2019/5/17 14:54
  */
 @Data
 public class SellerForm {

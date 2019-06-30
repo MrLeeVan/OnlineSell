@@ -14,7 +14,7 @@ import static org.junit.Assert.*;
 
 /**
  * @Author Leevan
- * @Date： 2018/12/16 17:09
+ * @Date： 2019/5/16 17:09
  */
 @SpringBootTest
 @RunWith(SpringRunner.class)
@@ -27,5 +27,4 @@ public class SellerServiceImplTest {
         SellerInfor sellerInfor = sellerService.findBySellerId( sellerId );
         Assert.assertEquals(sellerId, sellerInfor.getSellerId());
     }
-
 }

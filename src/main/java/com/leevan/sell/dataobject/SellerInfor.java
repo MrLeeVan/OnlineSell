@@ -8,7 +8,7 @@ import java.util.Date;
 
 /**
  * @Author Leevan
- * @Date： 2018/12/16 13:55
+ * @Date： 2019/5/16 13:55
  */
 @Entity
 @Data
@@ -29,7 +29,7 @@ public class SellerInfor {
     public SellerInfor(){
         /*默认构造方法*/
     }
-    public SellerInfor(String sellerId, String userName, String password, String openId) {
+    public SellerInfor(String sellerId, String userName, String password) {
         this.sellerId = sellerId;
         this.userName = userName;
         this.password = password;

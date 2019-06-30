@@ -4,7 +4,7 @@ import com.leevan.sell.enums.ResultEnum;
 
 /**
  * @Author Leevan
- * @Date： 2018/12/7 14:05
+ * @Date： 2019/5/7 14:05
  *
  * 自定义异常类
  */

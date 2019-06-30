@@ -7,7 +7,7 @@ import java.util.List;
 
 /**
  * @Author Leevan
- * @Date： 2018/12/6 15:48
+ * @Date： 2019/5/6 15:48
  */
 public interface OrderDetailRepository extends JpaRepository<OrderDetail,String> {
     List<OrderDetail> findByOrderId(String orderId);

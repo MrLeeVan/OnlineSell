@@ -4,7 +4,7 @@ import lombok.Getter;
 
 /**
  * @Author Leevan
- * @Date： 2018/12/6 15:10
+ * @Date： 2019/5/6 15:10
  */
 @Getter
 public enum PayStatusEnum implements CodeEnum{

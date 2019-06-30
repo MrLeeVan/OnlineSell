@@ -4,7 +4,7 @@ import com.leevan.sell.VO.ResultVO;
 
 /**
  * @Author Leevan
- * @Date： 2018/12/5 18:46
+ * @Date： 2019/5/5 18:46
  */
 public class ResultVOUtil {
     public static ResultVO success (Object object){

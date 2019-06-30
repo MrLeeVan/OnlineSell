@@ -8,7 +8,7 @@ import java.math.BigDecimal;
 
 /**
  * @Author Leevan
- * @Date： 2018/12/6 15:20
+ * @Date： 2019/5/6 15:20
  * 订单详情表
  */
 @Data

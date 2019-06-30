@@ -9,7 +9,7 @@ import java.util.List;
 
 /**
  * @Author Leevan
- * @Date： 2018/12/4 18:31
+ * @Date： 2019/5/4 18:31
  * 商品
  */
 public interface ProductService {

@@ -4,7 +4,7 @@ import com.leevan.sell.dto.OrderDTO;
 
 /**
  * @Author Leevan
- * @Date： 2018/12/10 17:14
+ * @Date： 2019/5/10 17:14
  * 买家
  */
 public interface BuyerService {

@@ -4,7 +4,7 @@ import com.leevan.sell.enums.CodeEnum;
 
 /**
  * @Author Leevan
- * @Date： 2018/12/13 12:46
+ * @Date： 2019/5/13 12:46
  */
 public class EnumUtils {
     public static <T extends CodeEnum> T getByCode(Integer code, Class<T> enumClass){

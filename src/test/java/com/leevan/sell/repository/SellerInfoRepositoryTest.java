@@ -12,7 +12,7 @@ import static org.junit.Assert.*;
 
 /**
  * @Author Leevan
- * @Date： 2018/12/16 16:40
+ * @Date： 2019/5/16 16:40
  */
 @SpringBootTest
 @RunWith( SpringRunner.class )
@@ -22,7 +22,7 @@ public class SellerInfoRepositoryTest {
 
     @Test
     public void saveTest(){
-        SellerInfor sellerInfo = new SellerInfor("123", "lee","123","123l");
+        SellerInfor sellerInfo = new SellerInfor("124","van","123");
         SellerInfor result = repository.save( sellerInfo );
         Assert.assertNotNull(result);
     }

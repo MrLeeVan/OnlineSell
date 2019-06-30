@@ -10,11 +10,11 @@ import java.util.List;
 
 /**
  * @Author Leevan
- * @Date： 2018/12/4 15:58
+ * @Date： 2019/5/4 15:58
  * 类目
  */
 @Service
-public class CategoryServiceImpl implements CategoryService {
+public class  CategoryServiceImpl implements CategoryService {
     @Autowired
     ProductCategoryRepository repository;
     @Override

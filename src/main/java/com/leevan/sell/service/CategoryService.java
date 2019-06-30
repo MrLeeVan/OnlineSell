@@ -6,7 +6,7 @@ import java.util.List;
 
 /**
  * @Author Leevan
- * @Date： 2018/12/4 15:54
+ * @Date： 2019/5/4 15:54
  */
 public interface CategoryService {
     ProductCategory findOne(Integer categoryId);
