@@ -3,77 +3,7 @@
   <component name="ChangeListManager">
     <list id="6ea6de5e-0139-48cf-8d8b-8adddc034f60" name="Revert: 删除目录target" comment="" />
     <list default="true" id="6930dc13-d60f-4dad-bf85-bd6dc5f3f539" name="Default" comment="Version 1.17  卖家后端管理 卖家查看订单详情 买家取消订单">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/UI/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/UI/register.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/UI/success.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/login/login.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/leevan/sell/controller/SellerOrderController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/leevan/sell/dto/OrderDTO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/leevan/sell/enums/OrderStatusEnum.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/leevan/sell/enums/PayStatusEnum.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/leevan/sell/enums/ResultEnum.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/templates/order/list.ftl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leevan/sell/VO/ProductInfoVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leevan/sell/VO/ProductInfoVO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leevan/sell/VO/ProductVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leevan/sell/VO/ProductVO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leevan/sell/VO/ResultVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leevan/sell/VO/ResultVO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leevan/sell/controller/BuyerOrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leevan/sell/controller/BuyerOrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leevan/sell/controller/BuyerProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leevan/sell/controller/BuyerProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leevan/sell/controller/SellerCategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leevan/sell/controller/SellerCategoryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leevan/sell/controller/SellerLoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leevan/sell/controller/SellerLoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leevan/sell/controller/SellerOrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leevan/sell/controller/SellerOrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leevan/sell/controller/SellerProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leevan/sell/controller/SellerProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leevan/sell/converter/OrderForm2OrderDTOConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leevan/sell/converter/OrderForm2OrderDTOConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leevan/sell/converter/OrderMaster2OrderDTOConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leevan/sell/converter/OrderMaster2OrderDTOConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leevan/sell/dataobject/OrderDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leevan/sell/dataobject/OrderDetail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leevan/sell/dataobject/OrderMaster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leevan/sell/dataobject/OrderMaster.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leevan/sell/dataobject/ProductCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leevan/sell/dataobject/ProductCategory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leevan/sell/dataobject/ProductInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leevan/sell/dataobject/ProductInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leevan/sell/dataobject/SellerInfor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leevan/sell/dataobject/SellerInfor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leevan/sell/dto/CartDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leevan/sell/dto/CartDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leevan/sell/dto/OrderDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leevan/sell/dto/OrderDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leevan/sell/enums/CodeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leevan/sell/enums/CodeEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leevan/sell/enums/OrderStatusEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leevan/sell/enums/OrderStatusEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leevan/sell/enums/PayStatusEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leevan/sell/enums/PayStatusEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leevan/sell/enums/ProductStatusEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leevan/sell/enums/ProductStatusEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leevan/sell/enums/ResultEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leevan/sell/enums/ResultEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leevan/sell/exception/SellException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leevan/sell/exception/SellException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leevan/sell/form/CategoryForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leevan/sell/form/CategoryForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leevan/sell/form/OrderForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leevan/sell/form/OrderForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leevan/sell/form/ProductForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leevan/sell/form/ProductForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leevan/sell/form/SellerForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leevan/sell/form/SellerForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leevan/sell/repository/OrderDetailRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leevan/sell/repository/OrderDetailRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leevan/sell/repository/OrderMasterRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leevan/sell/repository/OrderMasterRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leevan/sell/repository/ProductCategoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leevan/sell/repository/ProductCategoryRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leevan/sell/repository/ProductInfoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leevan/sell/repository/ProductInfoRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leevan/sell/repository/SellerInfoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leevan/sell/repository/SellerInfoRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leevan/sell/service/BuyerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leevan/sell/service/BuyerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leevan/sell/service/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leevan/sell/service/CategoryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leevan/sell/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leevan/sell/service/OrderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leevan/sell/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leevan/sell/service/ProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leevan/sell/service/SellerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leevan/sell/service/SellerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leevan/sell/service/impl/BuyerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leevan/sell/service/impl/BuyerServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leevan/sell/service/impl/CategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leevan/sell/service/impl/CategoryServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leevan/sell/service/impl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leevan/sell/service/impl/OrderServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leevan/sell/service/impl/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leevan/sell/service/impl/ProductServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leevan/sell/service/impl/SellerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leevan/sell/service/impl/SellerServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leevan/sell/utils/EnumUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leevan/sell/utils/EnumUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leevan/sell/utils/KeyUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leevan/sell/utils/KeyUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leevan/sell/utils/ResultVOUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leevan/sell/utils/ResultVOUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leevan/sell/utils/Serializer/Date2LongSerializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leevan/sell/utils/Serializer/Date2LongSerializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/product/index.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/product/index.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/leevan/sell/Logtest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/leevan/sell/Logtest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/leevan/sell/repository/OrderDetailRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/leevan/sell/repository/OrderDetailRepositoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/leevan/sell/repository/OrderMasterRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/leevan/sell/repository/OrderMasterRepositoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/leevan/sell/repository/ProductCategoryRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/leevan/sell/repository/ProductCategoryRepositoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/leevan/sell/repository/ProductInfoRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/leevan/sell/repository/ProductInfoRepositoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/leevan/sell/repository/SellerInfoRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/leevan/sell/repository/SellerInfoRepositoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/leevan/sell/service/impl/CategoryServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/leevan/sell/service/impl/CategoryServiceImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/leevan/sell/service/impl/OrderServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/leevan/sell/service/impl/OrderServiceImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/leevan/sell/service/impl/ProductServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/leevan/sell/service/impl/ProductServiceImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/leevan/sell/service/impl/SellerServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/leevan/sell/service/impl/SellerServiceImplTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -285,9 +215,9 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="948" />
-    <option name="y" value="258" />
-    <option name="width" value="1137" />
+    <option name="x" value="692" />
+    <option name="y" value="110" />
+    <option name="width" value="1347" />
     <option name="height" value="670" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -498,7 +428,7 @@
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -784,7 +714,7 @@
       <workItem from="1561199056418" duration="118000" />
       <workItem from="1561703859222" duration="653000" />
       <workItem from="1561778152131" duration="1939000" />
-      <workItem from="1561859131008" duration="628000" />
+      <workItem from="1561859131008" duration="1281000" />
     </task>
     <task id="LOCAL-00001" summary="first_try">
       <created>1543830401741</created>
@@ -1053,7 +983,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="253866000" />
+    <option name="totallyTimeSpent" value="254519000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1065,7 +995,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="297" y="2" width="909" height="536" extended-state="1" />
+    <frame x="554" y="88" width="1077" height="536" extended-state="0" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.17181209" side_tool="true" weight="0.45508102" />
@@ -1087,7 +1017,7 @@
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8228188" weight="0.40353462" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.3298969" />
       <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.82818794" visible="true" weight="0.79045093" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49698794" visible="true" weight="0.28739694" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49698794" visible="true" weight="0.23992133" />
       <window_info anchor="right" id="Bean Validation" order="8" />
       <window_info id="Web" order="6" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="7" />
